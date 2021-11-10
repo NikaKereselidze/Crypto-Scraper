@@ -28,6 +28,9 @@ Enter Crypto Currency: ''')
         crypto = 'vechain'
     elif cryptocurrency == '6':
         crypto = 'dogecoin'
+    else:
+        print('\nEnter a valid value (number)\n')
+        exit()
     currency = input('''
 (1) USD - $
 (2) GEL - ლ
@@ -73,6 +76,9 @@ Enter currency: ''')
             log_file = open(f'GEL/{crypto}-{selected_currency}.csv', 'a+')
             log_file.write(f'{price} at {datetime.now()},\n')
             print('\n'*150, crypto, '-', price)
+    else:
+        print('\nEnter a valid value (number)\n')
+        exit()
 except KeyboardInterrupt:
     print(' exit()')
     exit()
