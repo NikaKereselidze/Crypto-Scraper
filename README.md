@@ -1,3 +1,4 @@
+# Cryptocurrency Scraper
 To install the scraper run the installer by typing the command "./install.sh" or "sh install.sh"
 
 If it says 'command not found' then run "chmod +x install.sh"
