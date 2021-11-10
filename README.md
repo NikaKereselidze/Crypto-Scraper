@@ -1,4 +1,12 @@
 # Cryptocurrency Scraper
+Current Cryptocurrencis available in script:
+- Bitcoin   - BTC
+- Ethereum  - ETH
+- Tron      - TRX
+- Shiba Inu - SHIB
+- VeChain   - VET
+- Dogecoin  - DOGE
+
 To install the scraper run the installer by typing the command "./install.sh" or "sh install.sh"
 
 If it says 'command not found' then run "chmod +x install.sh"
