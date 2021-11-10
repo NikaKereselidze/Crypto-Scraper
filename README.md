@@ -1,5 +1,5 @@
 # Cryptocurrency Scraper
-Current Cryptocurrencis available in script:
+Current Cryptocurrencies available in script:
 - Bitcoin   - BTC
 - Ethereum  - ETH
 - Tron      - TRX
