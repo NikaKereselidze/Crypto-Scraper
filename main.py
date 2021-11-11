@@ -40,7 +40,7 @@ Enter currency: ''')
     if currency == '1':
         while True:
             html = get(f'https://coinmarketcap.com/currencies/{crypto}/')
-            soup = BeautifulSoup(html.text, 'lxml')
+            soup = BeautifulSoup(html.text, 'html.parser')
             price = soup.find('div', class_='priceValue')
             price = price.text
             try:
@@ -54,11 +54,11 @@ Enter currency: ''')
     elif currency == '2':
         selected_currency = 'gel'
         html = get(f'https://wise.com/gb/currency-converter/usd-to-{selected_currency}-rate')
-        soup = BeautifulSoup(html.text, 'lxml')
+        soup = BeautifulSoup(html.text, 'html.parser')
         usd_to_gel = soup.find('span', class_='text-success').text
         while True:
             html = get(f'https://coinmarketcap.com/currencies/{crypto}/')
-            soup = BeautifulSoup(html.text, 'lxml')
+            soup = BeautifulSoup(html.text, 'html.parser')
             price = soup.find('div', class_='priceValue')
             price = price.text
             price = price.replace('$', '')
